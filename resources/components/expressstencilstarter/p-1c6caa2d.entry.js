@@ -1,0 +1,1 @@
+import{r as t,h as o}from"./p-76f94dc7.js";const s=class{constructor(o){t(this,o),this.count="first"}render(){return o("div",null,"Your ",o("span",{class:"tomat"},`{ ${this.count} }`)," Stencil component!")}};s.style=".tomat{color:tomato}";export{s as my_component}
