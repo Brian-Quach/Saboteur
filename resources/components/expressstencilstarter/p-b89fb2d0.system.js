@@ -1,1 +1,0 @@
-System.register(["./p-6fc8e687.system.js","./p-124171c5.system.js"],(function(){"use strict";var t,e;return{setters:[function(e){t=e.b},function(t){e=t.p}],execute:function(){e().then((function(e){return t([["p-a1792f6d.system",[[1,"my-component",{count:[1]}]]]],e)}))}}}));

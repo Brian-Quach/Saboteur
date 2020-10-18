@@ -17,14 +17,7 @@
   scriptElm.setAttribute('data-stencil-namespace', 'expressstencilstarter');
   doc.head.appendChild(scriptElm);
 
-  
-  scriptElm = doc.createElement('script');
-  scriptElm.setAttribute('nomodule', '');
-  scriptElm.src = url + '/expressstencilstarter.js';
-  warn.push(scriptElm.outerHTML);
-  scriptElm.setAttribute('data-stencil-namespace', 'expressstencilstarter');
-  doc.head.appendChild(scriptElm)
-  
+  false
   console.warn(warn.join('\n'));
 
 })(document);

@@ -12,6 +12,12 @@ export namespace Components {
          */
         "count": string;
     }
+    interface SaboteurBoard {
+        /**
+          * The first name
+         */
+        "count": string;
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -20,8 +26,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLSaboteurBoardElement extends Components.SaboteurBoard, HTMLStencilElement {
+    }
+    var HTMLSaboteurBoardElement: {
+        prototype: HTMLSaboteurBoardElement;
+        new (): HTMLSaboteurBoardElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "saboteur-board": HTMLSaboteurBoardElement;
     }
 }
 declare namespace LocalJSX {
@@ -31,8 +44,15 @@ declare namespace LocalJSX {
          */
         "count"?: string;
     }
+    interface SaboteurBoard {
+        /**
+          * The first name
+         */
+        "count"?: string;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "saboteur-board": SaboteurBoard;
     }
 }
 export { LocalJSX as JSX };
@@ -40,6 +60,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "saboteur-board": LocalJSX.SaboteurBoard & JSXBase.HTMLAttributes<HTMLSaboteurBoardElement>;
         }
     }
 }

@@ -1,8 +1,8 @@
-import { r as registerInstance, h } from './index-3a09ee9d.js';
+import { r as registerInstance, h } from './index-bd5dc31c.js';
 
-const myComponentCss = ".tomat{color:tomato}";
+const saboteurBoardCss = "";
 
-const MyComponent = class {
+const SaboteurBoard = class {
     constructor(hostRef) {
         registerInstance(this, hostRef);
         /**
@@ -14,6 +14,6 @@ const MyComponent = class {
         return h("div", null, "Your ", h("span", { class: "tomat" }, `{ ${this.count} }`), " Stencil component!");
     }
 };
-MyComponent.style = myComponentCss;
+SaboteurBoard.style = saboteurBoardCss;
 
-export { MyComponent as my_component };
+export { SaboteurBoard as saboteur_board };
